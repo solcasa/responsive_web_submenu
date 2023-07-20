@@ -1,0 +1,45 @@
+html {
+    font-size: 6.25%;
+}
+
+@media (max-width: 500px) {
+    html {
+        /* w 390인 디바이스(ex. iphone 12)를 기준으로 (16/390*6.25/100) */
+        font-size: 0.25641025641vw;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: inherit;
+    font-weight: inherit; */
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-size: 16rem;
+    line-height: 1;
+}
+
+.inner {
+    max-width: 1200rem;
+    margin: 0 auto;
+    padding: 0 15rem;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.r_inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* 미디어커리없이 반응형 만들어버리는 쏘쑤 */
+}
